@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <link href="{% static 'css/portfolio.css' %}" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">Portfolio</h1>
+    </header>
+
+    <nav>
+      <ul class="nav">
+          <li><a href="{% url 'home' %}">Blog</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="img">
+        <img src="{% static 'xM5P5ldg.jpeg' %}" height = 400 alt = "산">
+        <img src="{% static '-YDKf99A.jpeg' %}" height = 400 alt = "불꽃">
+        <img src="{% static 'sGFWOu7w.jpeg' %}" height = 400 alt = "설산">
+        <img src="{% static 'Tasman Lake, New Zealand.jpg' %}" height = 400 alt = "호수">
+      </div>
+    </main>
+
+  </body>
+</html>

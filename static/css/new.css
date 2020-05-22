@@ -1,0 +1,83 @@
+
+@font-face { font-family: 'Chosunilbo_myungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&family=Playfair+Display:ital,wght@1,900&display=swap');
+
+.logo {
+    font-size: 50px;
+    text-align:center;
+    background: Black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+  }
+  
+  body {
+      margin: 0;
+      background: black;
+  }
+  nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding-left: 0px;
+      background-color: rgba(165, 0, 0, 50);
+      margin: 0;
+      border: 1px solid;
+      border-top-color: white;
+      border-bottom-color: white;
+  }
+  
+  nav li a {
+      margin: 150px;
+      text-decoration: none;
+  }
+
+  .container {
+      border: 3px solid rgba(165, 0, 0, 50);
+      border-radius: 10px;
+      padding: 0 25px 10px 25px;
+      margin: 32px auto;
+      background-color: white;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      width: 450px;
+      height: 540px;
+  }
+  
+  a:link, a:visited {
+      color: white;
+      font-style: italic;
+  }
+  
+  a:hover {
+      color: black;
+  }
+
+  .btn, .filebox label{
+    border: 1px solid rgba(165, 0, 0, 50); 
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(165, 0, 0, 50); 
+    color: white; 
+    font-family: serif;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .btn:hover, .filebox label:hover { 
+    background-color: white; 
+    color: rgba(165, 0, 0, 50); 
+}
+
+   input, textarea {
+    border-color: rgba(165, 0, 0, 50); 
+    border-radius: 5px;
+}
+
+   .filebox input[type="file"] {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);   
+    }

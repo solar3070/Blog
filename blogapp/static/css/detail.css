@@ -1,0 +1,76 @@
+@font-face { font-family: 'Chosunilbo_myungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&family=Playfair+Display:ital,wght@1,900&display=swap');
+
+.logo {
+    font-size: 50px;
+    text-align:center;
+    background: Black;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+  }
+  
+  body {
+      margin: 0;
+      background: black;
+  }
+  nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding-left: 0px;
+      background-color: rgba(165, 0, 0, 50);
+      margin: 0;
+  }
+  
+  nav li a {
+      margin: 150px;
+      text-decoration: none;
+  }
+
+  .song {
+      border: 3px solid rgba(165, 0, 0, 50);
+      border-radius: 10px;
+      padding: 25px;
+      margin: 32px;
+      width: 92%;
+      height: 450px;
+      display:flex;
+      background-color: white;
+      font-family: 'Chosunilbo_myungjo';
+      line-height: 1.4;
+  }
+
+  .song h1, h3 {
+      font-family: 'GmarketSansBold';  
+  }
+  
+  .metadata {
+      text-align: left;
+      padding: 30px 50px 30px 0;
+  }
+  
+  a:link, a:visited {
+      color: white;
+      font-style: italic;
+  }
+  
+  a:hover {
+      color: black;
+  }
+
+.img {
+    height: auto;
+    width: 550px;
+    padding: 55px;
+}
+
+.textarea {
+    height: 200px;
+    width: 600px;
+    overflow: auto;
+}
+

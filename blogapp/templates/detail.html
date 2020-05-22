@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'css/detail.css' %}" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo">Blog</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">BACK</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="song">
+                <img class="img" src="{{ details.image.url }}" alt="music">
+                <div class="metadata">
+                    <h1>{{details.title}}</h1>
+                    <h3>{{details.musician}}</h3>
+                    <p>{{details.pub_date}}</p>
+                    <p class="textarea">{{details.body|linebreaksbr}}</p>   
+                </div>> 
+            </div>       
+        </main>
+        
+    </body>
+
+</html>

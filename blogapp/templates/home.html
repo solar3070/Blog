@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'css/home.css' %}" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo">Blog</h1>
+        </header>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="{% url 'new' %}">WRITE</a></li>
+                <li><a href="{% url 'portfolio' %}">PORTFOLIO</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            {% for blog in blogs.all %}
+                <div class="song">
+                        <img class="img" src="{{ blog.image.url }}" alt="music">
+                        <h1>{{blog.title}}</h1>
+                        <h3>{{blog.musician}}</h3>
+                        <p>{{blog.pub_date}}</p>
+                        <p>{{blog.summary}}...</p>
+                        <a class="more" href = "{% url 'detail' blog.id %}">more</a>
+                </div>
+            {% endfor %}
+        </main>
+    </body>
+
+</html>
+
